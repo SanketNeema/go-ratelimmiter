@@ -1,0 +1,7 @@
+# Loop to call curl multiple times
+for ($i = 1; $i -le 5; $i++) {
+    Write-Host "Calling curl $i time..."
+    # Making the curl request
+    curl http://127.0.0.1:8080/ping
+    Write-Host "curl call $i completed."
+}
